@@ -7,8 +7,19 @@
 </head>
 <body ng-app="myApp">
 	<div class="main" ng-controller="MainController">
+
 		<h1>{{ title }}</h1>
-	</div>
+		<h2>{{ promo }}</h2>
+
+		<div class="col-md-6">
+          <div class="thumbnail">
+            <img src="img/the-book-of-code.jpg">
+            <p class="title">{{ product.name }}</p>
+            <p class="price">{{ product.price | currency }}</p>
+          </div>
+        </div>
+
+	</div><!-- .main -->
 
 <!-- Modules -->
 <script src="js/app.js"></script>
