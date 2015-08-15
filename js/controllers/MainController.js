@@ -15,7 +15,7 @@ app.controller('MainController',
 	    name: 'Program or be Programmed', 
 	    price: 8, 
 	    pubdate: new Date('2013', '08', '01'), 
-	    cover: 'img/the-book-of-code.jpg',
+	    cover: 'img/program-or-be-programmed.jpg',
 	    likes: 0,
 	    dislikes: 0,
 	  } 
