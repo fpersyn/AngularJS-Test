@@ -14,8 +14,9 @@
 		<div class="col-md-6">
           <div class="thumbnail">
             <img src="img/the-book-of-code.jpg">
-            <p class="title">{{ product.name }}</p>
+            <p class="title">{{ product.name | uppercase }}</p>
             <p class="price">{{ product.price | currency }}</p>
+            <p class="date">{{ product.pubdate | date }}</p>
           </div>
         </div>
 
