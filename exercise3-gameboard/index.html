@@ -15,9 +15,8 @@
     <div class="main" ng-controller="ScoreController">
       <div class="container">
         
-        <div class="row">
-          
-
+        <div ng-repeat="score in scores" class="row">
+          <game info="score"></game>
         </div>
       
       </div>
