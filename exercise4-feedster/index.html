@@ -21,7 +21,8 @@
     <div class="posts" ng-controller="PostController">
       <div class="container">
 
-        <div class="post">
+        <div class="post" ng-repeat="post in posts">
+          <feedster-post post="post"></feedster-post>
         </div>
 
       </div>
