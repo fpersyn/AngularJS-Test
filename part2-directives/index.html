@@ -3,8 +3,6 @@
   <head>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />  
     <link href="css/main.css" rel="stylesheet" />
-
-    <!-- Include the AngularJS library -->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
   </head>
   <body ng-app="AppMarketApp">
@@ -18,6 +16,7 @@
       <div class="container">
          <div ng-repeat="app in apps" class="card">
           <app-info info="app"></app-info>
+          <install-app></install-app>
         </div>
       </div>
     </div>
@@ -30,7 +29,7 @@
 
     <!-- Directives -->
     <script src="js/directives/appInfo.js"></script>
-
+    <script src="js/directives/installApp.js"></script>
 
   </body>
 </html>
