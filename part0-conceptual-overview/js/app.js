@@ -1,1 +1,1 @@
-var app = angular.module("invoice", []);
+var app = angular.module('invoice', ['finance']);
