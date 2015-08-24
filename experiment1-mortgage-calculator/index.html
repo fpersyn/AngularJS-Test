@@ -24,7 +24,7 @@
         <p>{{sum | currency}}</p>
 
         <label for="years">Looptijd:</label><br>
-        <input type="range" name="years" min="0" max="30" step="1" ng-model="years">
+        <input type="range" name="years" min="0" max="40" step="1" ng-model="years">
         <p>{{years}} jaar</p>
         
         <label for="interest">Rentevoet:</label><br>
@@ -36,6 +36,20 @@
         <p>{{startdate}}</p>
 
       </div><!-- .calculator -->
+
+
+      <div class='col-sm-3 results'>
+
+        <p>
+          <b>Maandrente:</b><br>
+          {{monthlyinterest()}}
+        </p>
+        <p>
+          <b>Annuïteit:</b><br>
+          {{annuity() | currency}}
+        </p>
+
+      </div><!-- .results -->
 
     </div><!-- .row -->
   </div><!-- .main -->
